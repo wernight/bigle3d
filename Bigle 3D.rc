@@ -1,0 +1,471 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Anglais (États-Unis) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "res\\Bigle 3D.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 280, 130
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Step 5 of 5 - Finished"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "About :",IDC_STATIC,46,7,187,116
+    ICON            IDR_MAINFRAME,IDC_STATIC,64,36,20,20
+    LTEXT           "Bigle 3D v3.40",IDC_BUILD_TEXT,93,28,82,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005 Werner BEROUX",IDC_STATIC,93,44,119,
+                    8
+    LTEXT           "Web :",IDC_STATIC,93,63,20,8
+    EDITTEXT        IDC_WEB_EDIT,124,63,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "E-mail :",IDC_STATIC,93,79,24,8
+    EDITTEXT        IDC_EMAIL_EDIT,124,79,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "ICQ :",IDC_STATIC,93,95,17,8
+    EDITTEXT        IDC_ICQ_EDIT,124,95,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+END
+
+IDD_START DIALOG  0, 0, 280, 154
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Step 1 of 5 - Presentation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Program presentation :",IDC_STATIC,41,7,196,140
+    LTEXT           "This wizard will create a new stereogram.",IDC_STATIC,
+                    51,26,177,20
+    LTEXT           "A pattern will be used to make the background. It will be reapeated to fill the stereogram.. This will be the visible image without squinting.\nAnother picture will contain the 3D informations. The final picture will have approximatly the same size as it.",
+                    IDC_STATIC,51,54,177,49
+    LTEXT           "If you squint, elements will pop-up out of the background. If you are not used to stereograms, take the time and try. It's not so easy.",
+                    IDC_STATIC,51,108,177,27
+END
+
+IDD_RELIEF DIALOG  0, 0, 280, 154
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Step 3 of 5 - Relief"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "A gray picture contain relief informations :",
+                    IDC_STATIC,41,7,196,140
+    LTEXT           "Create a grayed picture. It will contain height informations: So more a part of it is dark, so more it goes into the back (in 3D).",
+                    IDC_STATIC,51,22,177,26
+    EDITTEXT        IDC_FILE_EDIT,51,93,133,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_FILE_BUTTON,188,93,37,14
+    LTEXT           "If you want to used a 3D image, I advice you to remove all the lights, use a black background, and texturize objets with a gradient image.",
+                    IDC_STATIC,51,53,177,27
+    RTEXT           "The depth of the stereogram between black and white can be set here :",
+                    IDC_STATIC,51,118,123,19
+    EDITTEXT        IDC_PROFONDEURMAX_EDIT,184,121,41,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+END
+
+IDD_FOND DIALOG  0, 0, 280, 154
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Step 2 of 5 - Background"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Pattern :",IDC_STATIC,41,7,196,140
+    LTEXT           "The final picture will be on a background of your choice. This picture will be repeated horizontally to fit the relief image. I advice you to use a picture that is contrasted, sharpened, as high as the relief image and approximatly 140 pixel width.",
+                    IDC_STATIC,51,27,177,41
+    EDITTEXT        IDC_FILE_EDIT,53,112,133,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_FILE_BUTTON,190,112,37,14
+    LTEXT           "So wider the pattern is, so more you need squinting to see the hidden 3D objets.",
+                    IDC_STATIC,51,77,177,18
+END
+
+IDD_CREATE_IMG DIALOG  0, 0, 280, 154
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Step 4 of 5 - Calculate"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,41,32,196,57
+    CTEXT           "The picture is being calculated please wait...",
+                    IDC_STATIC,51,44,177,11
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    61,63,158,11
+    CTEXT           "Once the opearation finished, you'll be asked where to save the stereogram image on your computer.",
+                    IDC_STATIC,50,101,180,28
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_RELIEF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_FOND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_CREATE_IMG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,4,0,164
+ PRODUCTVERSION 3,4,0,164
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Create stereograms."
+            VALUE "CompanyName", "Beroux.com"
+            VALUE "FileDescription", "Application MFC Bigle 3D"
+            VALUE "FileVersion", "3, 4, 0, 164"
+            VALUE "InternalName", "Bigle 3D"
+            VALUE "LegalCopyright", "Copyright (C) 2005 Werner BEROUX"
+            VALUE "OriginalFilename", "Bigle 3D.exe"
+            VALUE "ProductName", "Application Bigle 3D"
+            VALUE "ProductVersion", "3, 4, 0, 164"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_GENERIC_ERROR       "An unhandled error happenend."
+    IDS_ERROR_LOADING_TEMP_IMAGE "Error: Could not load temporary image."
+    IDS_UNKNOWN_IMAGE_FORMAT "Unknown image format."
+    IDS_UNSUPPORTED_IMAGE_FORMAT "Unsupported image format."
+    IDS_COULD_NOT_SAVE_FILE "Could not save destination image."
+    IDS_NO_ERROR            "No error."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PATTERN_LOAD_ERROR  "Error loading pattern image."
+    IDS_RELIEF_LOAD_ERROR   "Error loading relief image."
+    IDS_FINAL_ALLOCATE_ERROR "Can not allocate memory for final image."
+END
+
+#endif    // Anglais (États-Unis) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CREATE_IMG DIALOG  0, 0, 280, 154
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Étape 4 sur 5 - Calcul"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,41,32,196,57
+    CTEXT           "L'image est entrains d'être calculée, veuillez patienter...",
+                    IDC_STATIC,51,44,177,11
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    61,63,158,11
+    CTEXT           "Une fois l'operation terminée il vous sera demandé d'enregistrer où vous souhaitez enregistrer l'image finale.",
+                    IDC_STATIC,50,101,180,31
+END
+
+IDD_FOND DIALOG  0, 0, 280, 154
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Étape 2 sur 5 - Fond"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Motif :",IDC_STATIC,41,7,196,140
+    LTEXT           "L'image finale sera sur un fond de votre choix, constituée d'une mosaique horizontale de l'image de fond choisie. Je vous conseil de prendre une image très contrastée, nette, plus haute que l'image contenant le relief, et assez fine (140 pixel environ).",
+                    IDC_STATIC,51,26,177,41
+    EDITTEXT        IDC_FILE_EDIT,53,112,133,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Parcourir",IDC_FILE_BUTTON,190,112,37,14
+    LTEXT           "Plus le motif est large, plus il faudra loucher pour voir le relief.",
+                    IDC_STATIC,51,77,177,18
+END
+
+IDD_RELIEF DIALOG  0, 0, 280, 154
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Étape 3 sur 5 - Relief"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Image contenant les informations sur le relief :",
+                    IDC_STATIC,41,7,196,140
+    LTEXT           "Créez une image en niveau de gris.\nElle contiendra les informations sur les reliefs: Plus une zone est claire, plus elle ressort en avant (en 3D).",
+                    IDC_STATIC,51,22,177,26
+    EDITTEXT        IDC_FILE_EDIT,51,93,133,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Parcourir",IDC_FILE_BUTTON,188,93,37,14
+    LTEXT           "Si vous voulez utiliser une image 3D, je vous conseil d'enlever toutes les lampes (et lumière ambiante), fond noir et de mettre tous les objets en opaque avec comme texture un dégradé en profondeur du blanc au noir.",
+                    IDC_STATIC,51,50,177,37
+    RTEXT           "Différence de profondeur (en 3D) entre le blanc et le noir peut être définie ici :",
+                    IDC_STATIC,51,118,123,19
+    EDITTEXT        IDC_PROFONDEURMAX_EDIT,184,121,41,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+END
+
+IDD_START DIALOG  0, 0, 280, 154
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Étape 1 sur 5 - Présentation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Présentation du logiciel :",IDC_STATIC,41,7,196,140
+    LTEXT           "Ce wizard vous permettra au final d'avoir un stéréogramme.",
+                    IDC_STATIC,51,26,177,20
+    LTEXT           "Un motif constirura le fond et sera répétée automatiquement. Il constituera l'image visible sans loucher. \nUne autre image contiendra les informations sur le relief. L'image finale aura presque la même taille que cette image.",
+                    IDC_STATIC,51,54,177,49
+    LTEXT           "Si vous louchez vous verrez des objets sortir du fond. Si vous n'êtes pas habitués aux stéréogrammes, prenez le temps d'essayer, c'est pas si facile à voir.",
+                    IDC_STATIC,51,108,177,27
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 280, 130
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Étape 5 sur 5 - Terminé"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "A propos :",-1,46,7,187,116
+    ICON            IDR_MAINFRAME,-1,64,36,20,20
+    LTEXT           "Bigle 3D v3.40",IDC_BUILD_TEXT,93,28,82,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005 Werner BEROUX",-1,93,44,119,8
+    LTEXT           "Web :",-1,93,63,20,8
+    EDITTEXT        IDC_WEB_EDIT,124,63,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "E-mail :",-1,93,79,24,8
+    EDITTEXT        IDC_EMAIL_EDIT,124,79,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "ICQ :",-1,93,95,17,8
+    EDITTEXT        IDC_ICQ_EDIT,124,95,87,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CREATE_IMG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_FOND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_RELIEF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Bigle 3D.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.fra\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Bigle 3D.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_LIEN_CURSOR         CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_GENERIC_ERROR       "Une erreur non traitée est apparue."
+    IDS_ERROR_LOADING_TEMP_IMAGE 
+                            "Erreur: Impossible de charger l'image temporaire."
+    IDS_UNKNOWN_IMAGE_FORMAT "Format d'image inconnue."
+    IDS_UNSUPPORTED_IMAGE_FORMAT "Format d'image non supporté."
+    IDS_COULD_NOT_SAVE_FILE "Une erreur est apparue durant la sauvegarde."
+    IDS_NO_ERROR            "Pas d'erreur."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PATTERN_LOAD_ERROR  "Erreur lors du chargement du modif."
+    IDS_RELIEF_LOAD_ERROR   "Erreur lors du chargement du relief."
+    IDS_FINAL_ALLOCATE_ERROR 
+                            "Impossible d'allouer la mémoire pour l'image finale."
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Bigle 3D.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.fra\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,63 @@
+Bigle 3D
+Copyright (c) 2005 Werner BEROUX
+
+Version 3.40 (2005.07.23):
+
+  Changes:
+   o New stereogram generation algorithm.
+   o New FreeImage library version 3.70.
+
+  Bug Fixed:
+   o Saving and a lot or image generation problems solved.
+
+
+Version 3.33 (2004.03.31):
+
+  Changes:
+   o New FreeImage library version 3.21.
+   o Warn if an error occured burind image generation.
+
+  Bug Fixed:
+   o Division by zero if the background width was same as relief's width.
+   o Small memory leak in the image generation.
+
+
+Version 3.32 (2004.02.04):
+
+  Changes:
+   o New FreeImage library version 3.10.
+
+  Bug Fixed:
+   o Crash when saving the result image (opefully the last bug there).
+   o Corrected a memory leak.
+
+
+Version 3.31 (2003.12.13):
+
+  Bug Fixed:
+   o Crash when saving the result image.
+   o New FreeImage library version 3.04.
+
+
+Version 3.30 (2003.10.30):
+
+  Changes:
+   o New FreeImage image loading/saving library.
+
+
+Version 3.21 (2003.10.08):
+
+  Features Added:
+   o Install with components to install choice dialog.
+
+
+Version 3.20 (2003.05.31):
+
+  Bugs Fixed:
+   o Can't open common dialog box (browse button and saving dialog).
+
+
+Version 3.12 (2003.03.29):
+
+  Features Added:
+   o Installation change the file name depending on selected language.

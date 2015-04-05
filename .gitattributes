@@ -1,0 +1,5 @@
+* text=auto
+
+*.cpp text diff=cpp
+
+Install/*.txt text eol=crlf
